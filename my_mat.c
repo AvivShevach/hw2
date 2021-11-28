@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include "my_mat.h"
-
 void A(int arr[][ARRAY_SIZE])
 {
 	for (int i = 0; i < ARRAY_SIZE; i++)
 		for (int j = 0; j < ARRAY_SIZE; j++)
 		{
-		//	printf("enter num\n");
 			scanf("%d", &arr[i][j]);
 		}
 		for (int k = 0; k < ARRAY_SIZE; k++)
@@ -28,22 +26,12 @@ void A(int arr[][ARRAY_SIZE])
 				}
 			}
 		}
-
-		// printf("\nk=%d\n", k);
-		// for (int i = 0; i < size; i++)
-		// {
-		// 	for (int j = 0; j < size; j++)
-		// 		printf("%4d", arr[i][j]);
-		// 	printf("\n");
-		// }
 	}
 }
 void B(int arr[][ARRAY_SIZE])
 {
 	int i,j;
-	//printf("enter i\n");
 	scanf("%d", &i);
-	//printf("enter j\n");
 	scanf("%d", &j);
 	if (arr[i][j]>0)
 		printf("True\n");
@@ -53,11 +41,8 @@ void B(int arr[][ARRAY_SIZE])
 
 void C(int arr[][ARRAY_SIZE])
 {
-	
 	int i,j;
-	//printf("enter i\n");
 	scanf("%d", &i);
-	//printf("enter j\n");
 	scanf("%d", &j);
 	if(arr[i][j] != 0)
 		printf("%d\n", arr[i][j]);
